@@ -1,0 +1,89 @@
+#contact {
+    background: url(../images/contacto.jpg);
+    color: #fff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    padding: 50px 0;
+}
+
+#darkshadow {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+}
+
+.container-contact {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.2rem 0;
+}
+
+.container-contact * {
+    box-sizing: border-box;
+}
+
+.container-contact h2 {
+    text-transform: uppercase;
+    text-align: center !important;
+    margin-bottom: 20px;
+}
+
+.flex-outer {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex-outer li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-outer>li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+    padding: 8px;
+    font-weight: 500;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+.flex-outer>li>label,
+.flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 200px;
+}
+
+.flex-outer>li>label+* {
+    flex: 1 0 220px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: var(--colorbutton);
+    color: var(--copyrightbg);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.flex-outer li button:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+@media all and (max-width: 460px) {
+    .container-contact h2 {
+        font-size: 1.5rem;
+    }
+}

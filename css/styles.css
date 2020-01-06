@@ -1,0 +1,85 @@
+@import url(menu.css);
+@import url(video.css);
+@import url(about.css);
+@import url(services.css);
+@import url(events.css);
+@import url(contact.css);
+@import url(footer.css);
+@import url(button_up.css);
+:root {
+    --whiteMenu: rgba(255, 255, 255, .8);
+    --whitemenuHover: white;
+    --navBackground: #000;
+    --videoFilter: rgba(66, 65, 65, 0.7);
+    --bginputs: #fff;
+    --footerbg: #444;
+    --separationline: #777;
+    --text: #bbb;
+    --textlink: #eee;
+    --textbutton: rgba(255, 255, 255, .8);
+    --textbuttonhover: #fff;
+    --colorbutton: rgba(61, 239, 213);
+    --copyrightbg: #222;
+    --black1: rgb(0, 6, 7);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: ’Lato’, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container-center {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-center * {
+    box-sizing: border-box;
+}
+
+.container-center h2 {
+    text-transform: uppercase;
+    text-align: center !important;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a:hover {
+    color: var(--whitemenuHover);
+}
+
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1.25rem;
+}
+
+input,
+textarea {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+    background: var(--bginputs);
+    color: #777;
+    box-shadow: 5px 5px 5px rgba(61, 239, 213, 0.5);
+}
+
+h2 {
+    letter-spacing: 10px;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 5px rgba(61, 239, 213, 0.5);
+}

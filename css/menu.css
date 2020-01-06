@@ -1,0 +1,164 @@
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    background: var(--navBackground);
+    padding: 5px 20px;
+}
+
+.item a,
+.logo a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 7.5px 15px;
+    border: 1px var(--navBackground) solid;
+}
+
+.item a:hover {
+    color: #ddd;
+    padding: 7.5px 15px;
+    background: transparent;
+    border: 1px var(--colorbutton) solid;
+}
+
+.logo a:hover,
+.toggle a i:visited {
+    text-decoration: none !important;
+}
+
+.menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+}
+
+.logo a,
+.toggle a {
+    font-size: 20px;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    order: 1;
+}
+
+.item.button {
+    order: 2;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+
+@media all and (min-width: 600px) {
+    .menu {
+        justify-content: center;
+    }
+    .logo {
+        flex: 1;
+    }
+    .toggle {
+        flex: 1;
+        text-align: right;
+    }
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .item.button a {
+        color: var(--footerbg);
+    }
+    .toggle {
+        order: 2;
+    }
+    .button.secondary {
+        border: 0;
+    }
+    .button a {
+        padding: 7.5px 15px;
+        background: var(--colorbutton);
+    }
+    .button.secondary a {
+        background: transparent;
+    }
+    .button a:hover {
+        text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+        background: var(--colorbutton);
+        border-color: #005959;
+    }
+    .button.secondary a:hover {
+        color: #ddd;
+    }
+}
+
+@media all and (min-width: 900px) {
+    .item {
+        display: block;
+        width: auto;
+    }
+    .toggle {
+        display: none;
+    }
+    /*Parte nueva*/
+    .inicio {
+        order: 0;
+    }
+    .about {
+        order: 1;
+    }
+    .logo {
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+    .servicios {
+        order: 3;
+    }
+    .eventos {
+        order: 4;
+    }
+    .item.contact {
+        order: 5;
+    }
+    /**/
+    /*.logo {
+        order: 0;
+    }*/
+    /*.item {
+        order: 1;
+    }
+    .button {
+        order: 2;
+    }*/
+    .menu li {
+        padding: 15px 10px;
+    }
+    .menu li.button {
+        padding-right: 0;
+    }
+    .logo-img {
+        position: absolute;
+        top: 0.5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}

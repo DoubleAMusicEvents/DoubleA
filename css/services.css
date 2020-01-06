@@ -1,0 +1,64 @@
+#services {
+    position: relative;
+    top: 0;
+    background: url(../images/services.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: auto;
+}
+
+#services h2 {
+    color: var(--textlink);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container-services {
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    background-color: rgba(5, 5, 5, 0.637);
+    padding: 15px;
+    margin: 35px;
+    border-radius: 10px;
+    border: double var(--colorbutton) 3px;
+}
+
+.img {
+    padding-top: 30px;
+}
+
+.img img {
+    height: 120px;
+    width: 100%;
+}
+
+.description {
+    padding-bottom: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.description h3 {
+    text-transform: uppercase;
+    color: var(--textbuttonhover);
+}
+
+.description p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--textbuttonhover);
+}
+
+@media all and (max-width: 460px) {
+    #services h2 {
+        font-size: 1.8rem;
+    }
+}
